@@ -38,6 +38,33 @@
     <main>
         <section class="container" id="comidas">
           <!-- Agrega la información sobre las comidas aquí -->
+          <h2>Comidas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Empanadas</h3>
+                    <p>Elije 2 sabores entre: Carne cortada a cuchillo, Jamón y Queso, Pollo, Verdura y salsa blanca, Humita, Queso y cebolla, Mediterránea.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Pizza Party</h3>
+                    <p>Pizza libre para todos los invitados. 10 sabores de pizza: mozzarella, napolitana, jamón y morrones, huevo, rúcula y jamón crudo, choclo, calabresa, champiñones, margarita, fugazzeta.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Pernil</h3>
+                    <p>Pernil de cerdo con figazzitas de manteca y 5 salsas: mostaza y miel, morrones asados, mayonesa y hierbas, salsa criolla, salsa barbacoa.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Sanguchitos de Miga</h3>
+                    <p>Surtidos: Jamón y Queso, Jamón y Tomate, Queso y Lechuga, Aceitunas y Queso, Choclo y Queso, Huevo y Queso. (También pueden ser todos de Jamón y Queso)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Tablas de Fiambres y Picada</h3>
+                    <p>Jamón Natural, Salame, Salamin Picado Fino, Longaniza, Aceitunas Verdes, Aceitunas Negras, Tomates Cherry, Queso Azul/Roquefort, Queso Patregrás/Gouda/Mar del plata, Queso Reggianito/Provolone, Queso Tybo, Jamón Crudo, Pavita ahumada, Mani salado, Mani Japonés, Frutos Secos (Almendras, Nueces y Castañas), Cebollines en vinagre, Pepinillos en vinagre, Paneras con variedad de panes y brusquetas, Salsas DIP para acompañar (mayonesa de ajo, queso crema con ciboulette).</p>
+                </div>
+            </div>
         </section>
         
         <section class="container" id="servicios">
@@ -73,10 +100,38 @@
         
         <section class="container" id="reservas">
             <!-- Agrega el formulario de reservas aquí -->
+            <h2>Reservas</h2>
+            <p>Por favor, completa el siguiente formulario para realizar una reserva:</p>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre del Cliente</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha del Evento</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="mb-3">
+                    <label for="personas" class="form-label">Cantidad de Personas</label>
+                    <input type="number" class="form-control" id="personas" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="zona" class="form-label">Zona</label>
+                    <input type="text" class="form-control" id="zona" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Reservar</button>
+            </form>
         </section>
         
         <section class="container" id="contacto">
             <!-- Agrega la información de contacto aquí -->
+            <h2>Contacto</h2>
+              <p>Para obtener más información o hacer consultas, no dudes en ponerte en contacto con nosotros a través de las siguientes vías:</p>
+              <ul>
+                  <li>URL: <a href="https://contutti.com.ar" target="_blank">contutti.com.ar</a></li>
+                  <li>Instagram: <a href="https://www.instagram.com/contutti.pizzaparty/" target="_blank">@contutti.pizzaparty</a></li>
+              </ul>
+              <p>¡Esperamos tener noticias tuyas pronto!</p>
         </section>
     </main>
     
