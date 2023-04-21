@@ -24,14 +24,31 @@ body {
     color: #ffc400; /* Encabezado de color amarillo anaranjado */
   }
   
-  ul {
+  ul, li {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
   }
-  
-  .footer {
-    background-color: #ffc400; /* Color de resaltado a juego con el encabezado */
+  ul {
+    padding: 1rem;
   }
   
+  ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  ul li a i {
+    margin-right: 0.5rem;
+  }
+  
+  ul li a:hover {
+    color: #ffc400;
+  }
+  
+  ul li a:visited:hover {
+    color: #ffc400;
+  }
+    
   .social-icons {
     display: flex;
     justify-content: center;
@@ -59,3 +76,34 @@ body {
     width: 100%;
     height: auto;
   }
+
+  footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer a:hover,
+  footer a:visited:hover {
+    color: #ffc400;
+  }
+  
+  footer h5,
+  footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer hr {
+    border-top-width: 3px;
+  }
+  
+  footer .fab,
+  footer .fas {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
