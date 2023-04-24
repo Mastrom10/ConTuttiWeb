@@ -1,7 +1,7 @@
 class Contacto {
     public $nombre;
     public $telefono;
-    public $mail;
+    public $email;
     public $fecha;
     public $cantidad_invitados;
     public $zona;

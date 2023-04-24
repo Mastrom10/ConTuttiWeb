@@ -11,7 +11,7 @@ class ContactoController {
 
     public function registrarContacto($contacto) {
         $stmt = $this->db->prepare("INSERT INTO contactos (nombre, telefono, email, fecha, cantidad_invitados, zona) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssis", $contacto->nombre, $contacto->telefono, $contacto->mail, $contacto->fecha, $contacto->cantidad_invitados, $contacto->zona);
+        $stmt->bind_param("ssssis", $contacto->nombre, $contacto->telefono, $contacto->email, $contacto->fecha, $contacto->cantidad_invitados, $contacto->zona);
         $stmt->execute();
         $stmt->close();
     }
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $contacto = new Contacto();
     $contacto->nombre = $data['nombre'];
     $contacto->telefono = $data['telefono'];
-    $contacto->mail = $data['mail'];
+    $contacto->email = $data['email'];
     $contacto->fecha = $data['fecha'];
     $contacto->cantidad_invitados = $data['cantidad_invitados'];
     $contacto->zona = $data['zona'];
