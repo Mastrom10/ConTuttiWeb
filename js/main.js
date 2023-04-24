@@ -5,16 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  const personas = document.getElementById("personas");
+  const personasSlider = document.getElementById("personas");
   const personasValue = document.getElementById("personas-value");
 
-  personas.addEventListener("input", () => {
-    if (personas.value == "101") {
-      personasValue.textContent = "más de 100";
-    } else {
-      personasValue.textContent = personas.value;
-    }
+  personasSlider.addEventListener("input", (event) => {
+    const value = event.target.value;
+    personasValue.textContent = value === "101" ? "+100" : value;
   });
+
 
   const telefonoInput = document.getElementById("telefono");
   const telefonoRegex = /^([0-9]{4})-?([0-9]{6})$/;

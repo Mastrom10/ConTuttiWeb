@@ -188,8 +188,10 @@
         </div>
         <div class="mb-3">
           <label for="personas" class="form-label">Cantidad de Personas</label>
-          <input type="range" class="form-range" id="personas" name="cantidad_invitados" min="30" max="101" required>
-          <span id="personas-value"></span>
+          <div class="d-flex align-items-center">
+            <span id="personas-value">40</span>
+            <input type="range" class="form-range flex-grow-1" id="personas" name="cantidad_invitados" min="30" max="101" value="40" required>
+          </div>
         </div>
         <div class="mb-3">
             <label for="zona" class="form-label">Zona</label>
