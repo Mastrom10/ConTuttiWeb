@@ -187,8 +187,9 @@
             <input type="date" class="form-control" id="fecha" name="fecha" required>
         </div>
         <div class="mb-3">
-            <label for="personas" class="form-label">Cantidad de Personas</label>
-            <input type="number" class="form-control" id="personas" name="cantidad_invitados" min="1" required>
+          <label for="personas" class="form-label">Cantidad de Personas</label>
+          <input type="range" class="form-range" id="personas" name="cantidad_invitados" min="30" max="101" required>
+          <span id="personas-value"></span>
         </div>
         <div class="mb-3">
             <label for="zona" class="form-label">Zona</label>
