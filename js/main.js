@@ -2,15 +2,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contacto-form");
   const mensajeExito = document.getElementById("contacto-exito");
 
+
+  const telefonoInput = document.getElementById("telefono");
+  const telefonoRegex = /^([0-9]{4})-?([0-9]{6})$/;
+
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const enviado = await enviarFormulario();
-
-    if (enviado) {
-      form.classList.add("d-none");
-      mensajeExito.classList.remove("d-none");
+    const telefonoValido = telefonoRegex.test(telefonoInput.value);
+  
+    if (!telefonoValido) {
+      telefonoInput.setCustomValidity("Por favor ingrese un número de teléfono válido (ej. 11-12345678)");
+      telefonoInput.reportValidity();
+    } else {
+      telefonoInput.setCustomValidity("");
+      const enviado = await enviarFormulario();
+  
+      if (enviado) {
+        form.classList.add("d-none");
+        mensajeExito.classList.remove("d-none");
+      }
     }
-  });
+  });  
 });
 
 async function enviarFormulario() {
@@ -29,7 +42,7 @@ async function enviarFormulario() {
 
     if (response.ok) {
       const result = await response.json();
-      alert(result.message);
+      
       return true;
     } else {
       alert("Error al registrar el contacto");

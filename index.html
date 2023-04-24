@@ -175,8 +175,8 @@
             <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
         <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{4}-?[0-9]{6}" title="Por favor ingrese un número de teléfono válido (ej. 11-12345678)" required>
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
@@ -198,7 +198,10 @@
       </form>
       
       <div id="contacto-exito" class="alert alert-success mt-3 d-none" role="alert">
-        ¡Tu reserva se ha registrado correctamente!
+        ¡Tu Consulta se ha registrado correctamente!
+        <br>
+        Un Asesor se pondrá en contacto con vos a la brevedad.
+
       </div>
     </section>
     
