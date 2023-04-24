@@ -1,6 +1,6 @@
 <?php
 $username = 'admin';
-$password = 'admin';
+$password = 'cocacola';
 $valid_passwords = array($username => $password);
 $valid_users = array_keys($valid_passwords);
 
