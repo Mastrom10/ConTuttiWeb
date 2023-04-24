@@ -40,5 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $contactoController->registrarContacto($contacto);
 
     header('Content-Type: application/json');
-    echo json_encode(['message' => 'Contacto registrado con éxito']);
+    echo json_encode(['message' => 'Contacto registrado con exito']);
 }
