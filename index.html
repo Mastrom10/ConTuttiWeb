@@ -160,12 +160,7 @@
       <div class="row">
         <div class="col-md-12">
           <h3>Servicio de Bebidas</h3>
-          <p>La modalidad del servicio será bandejeo. Nuestras mozas irán ofreciendo a todos los invitados las
-            diferentes preparaciones, así como también dejarán bandejas en las distintas mesas para que los invitados
-            puedan servirse. Nosotros llevamos todos los elementos necesarios para el servicio, incluyendo horno
-            pizzero, mesas de trabajo, tablas de pernil, servilletas y servilleteros para las mesas, paneras, tablas,
-            bandejas, etc. En el caso de las bebidas, nuestros mozos pueden encargarse de llevar jarras con bebida a las
-            diferentes mesas y Hielo. (bebidas y hielo no incluido)</p>
+          <p></p>
         </div>
       </div>
     </section>
@@ -174,25 +169,35 @@
       <!-- Agrega el formulario de reservas aquí -->
       <h2>Reservas</h2>
       <p>Por favor, completa el siguiente formulario para realizar una reserva:</p>
-      <form>
+      <form id="contacto-form">
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre del Cliente</label>
-          <input type="text" class="form-control" id="nombre" required>
+            <label for="nombre" class="form-label">Nombre del Cliente</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
         <div class="mb-3">
-          <label for="fecha" class="form-label">Fecha del Evento</label>
-          <input type="date" class="form-control" id="fecha" required>
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
         </div>
         <div class="mb-3">
-          <label for="personas" class="form-label">Cantidad de Personas</label>
-          <input type="number" class="form-control" id="personas" min="1" required>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="mb-3">
-          <label for="zona" class="form-label">Zona</label>
-          <input type="text" class="form-control" id="zona" required>
+            <label for="fecha" class="form-label">Fecha del Evento</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+        <div class="mb-3">
+            <label for="personas" class="form-label">Cantidad de Personas</label>
+            <input type="number" class="form-control" id="personas" name="cantidad_invitados" min="1" required>
+        </div>
+        <div class="mb-3">
+            <label for="zona" class="form-label">Zona</label>
+            <input type="text" class="form-control" id="zona" name="zona" required>
         </div>
         <button type="submit" class="btn btn-primary">Reservar</button>
-      </form>
+    </form>
+    
+    
     </section>
 
     <section class="container" id="contacto">
@@ -257,6 +262,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
