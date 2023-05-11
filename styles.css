@@ -67,16 +67,16 @@ body {
     object-fit: cover;
     margin-bottom: 1rem;
   }
-  
+
   .banner {
     width: 100%;
   }
-  
+    /*
   .banner img {
     width: 100%;
     height: auto;
   }
-
+*/
   footer {
     background-color: #1a1a1a;
     color: #ffffff;
