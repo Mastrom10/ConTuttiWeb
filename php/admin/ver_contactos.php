@@ -17,6 +17,7 @@ if ($result->num_rows > 0) {
                 <th>Fecha</th>
                 <th>Cantidad de Invitados</th>
                 <th>Zona</th>
+                <th>FechaContacto</th>
             </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
@@ -27,6 +28,7 @@ if ($result->num_rows > 0) {
                 <td>{$row['fecha']}</td>
                 <td>{$row['cantidad_invitados']}</td>
                 <td>{$row['zona']}</td>
+                <td>{$row['FechaConsulta']}</td>
             </tr>";
     }
     echo "</table>";
