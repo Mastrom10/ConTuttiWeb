@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
             </tr>";
     }
     echo "</table>";
+    echo "\n v1.0";
 } else {
     echo "No se encontraron resultados.";
 }
