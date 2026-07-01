@@ -1,0 +1,5 @@
+.venv/
+.env.aws
+.env.resend
+aws/credentials
+.cursor/mcp.json

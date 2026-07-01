@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "awslabs.aws-api-mcp-server": {
+      "command": "/home/u606098/Codigo/ConTuttiWeb/.venv/bin/python",
+      "args": ["-m", "awslabs.aws_api_mcp_server.server"],
+      "env": {
+        "AWS_REGION": "us-east-1",
+        "AWS_API_MCP_PROFILE_NAME": "contutti",
+        "AWS_SHARED_CREDENTIALS_FILE": "/home/u606098/Codigo/ConTuttiWeb/aws/credentials",
+        "AWS_CONFIG_FILE": "/home/u606098/Codigo/ConTuttiWeb/aws/config"
+      }
+    },
+    "resend": {
+      "command": "/home/u606098/.local/bin/npx",
+      "args": ["-y", "resend-mcp"],
+      "env": {
+        "RESEND_API_KEY": "re_xxxxxxxxxxxxxxxxxxxxxxxx",
+        "SENDER_EMAIL_ADDRESS": "consultas@contuttipizzaparty.com",
+        "REPLY_TO_EMAIL_ADDRESSES": "contuttipizzaparty@gmail.com"
+      }
+    }
+  }
+}

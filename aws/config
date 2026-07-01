@@ -1,0 +1,3 @@
+[profile contutti]
+region = us-east-1
+output = json
